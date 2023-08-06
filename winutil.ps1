@@ -10,7 +10,7 @@
     Author         : Chris Titus @christitustech
     Runspace Author: @DeveloperDurp
     GitHub         : https://github.com/ChrisTitusTech
-    Version        : 23.08.05
+    Version        : 23.08.06
 #>
 
 Start-Transcript $ENV:TEMP\Winutil.log -Append
@@ -21,7 +21,7 @@ Add-Type -AssemblyName System.Windows.Forms
 # variable to sync between runspaces
 $sync = [Hashtable]::Synchronized(@{})
 $sync.PSScriptRoot = $PSScriptRoot
-$sync.version = "23.08.05"
+$sync.version = "23.08.06"
 $sync.configs = @{}
 $sync.ProcessRunning = $false
 
@@ -3014,7 +3014,7 @@ $sync.configs.applications = '{
     "choco": "treesizefree"
   },
   "WPFInstallttaskbar": {
-    "winget": "TranslucentTB.TranslucentTB",
+    "winget": "9PF4KZ2VN4W9",
     "choco": "translucenttb"
   },
   "WPFInstallvisualstudio": {
